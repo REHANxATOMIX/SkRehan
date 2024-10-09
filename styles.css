@@ -1,3 +1,4 @@
+<style>
  /* Portfolio Section Styles */
     #portfolio-redirect {
         text-align: center;
@@ -206,3 +207,4 @@
         .dynamic-island { top: 10px; width: 240px; }
         .dynamic-island:hover { width: 280px; }
     }
+</style>
