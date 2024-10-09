@@ -47,6 +47,18 @@ section { padding: 80px 0; }
     100% { transform: rotate(360deg); }
 }
 
+/* Particle Background */
+.particle-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 26, 26, 0.8); /* Dark background for particles */
+    z-index: -1;
+    backdrop-filter: blur(10px); /* Blur effect for the background */
+}
+
 /* Dynamic Island Header Styles */
 .dynamic-island {
     position: fixed;
@@ -125,10 +137,8 @@ h2 {
 
 /* Services Section */
 #services {
-    background: rgba(26, 26, 26, 0.8); /* Darker background to enhance glass effect */
-    border-radius: 10px;
-    padding: 60px 20px;
-    backdrop-filter: blur(10px);
+    position: relative; /* Ensure positioning for particle background */
+    overflow: hidden; /* Hide overflow for a clean look */
 }
 .services-grid {
     display: grid;
