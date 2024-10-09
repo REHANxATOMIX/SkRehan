@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    <title><data:blog.title/></title>
+    <b:skin><![CDATA[
+
+   /* Portfolio Section Styles */
+    #portfolio-redirect {
+        text-align: center;
+        background: rgba(20, 20, 20, 0.7);
+        border-radius: 10px;
+        padding: 60px 20px;
+        margin: 40px 0;
+        position: relative;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+    }
+    
+    #portfolio-redirect::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(
+            circle at center,
+            rgba(76, 0, 255, 0.3) 0%,
+            rgba(76, 0, 255, 0.1) 30%,
+            rgba(76, 0, 255, 0) 70%
+        );
+        animation: rotate 20s linear infinite;
+        z-index: -1;
+    }
+    
+    @keyframes rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    .portfolio-button {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 18px;
+        color: #ffffff;
+        background: linear-gradient(45deg, #4c00ff, #00ffcc);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 1px;
+        box-shadow: 0 4px 15px rgba(76, 0, 255, 0.3);
+    }
+    
+    .portfolio-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(76, 0, 255, 0.4);
+        background: linear-gradient(45deg, #00ffcc, #4c00ff);
+    }
+
+
+    /* CSS Reset and Base Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: 'Roboto', Arial, sans-serif;
+        background: #000000;
+        color: #f0f0f0;
+        line-height: 1.6;
+    }
+    h1, h2, h3 { margin-bottom: 20px; }
+    p { margin-bottom: 15px; }
+
+    /* Layout */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 80px 20px 20px;
+    }
+    section { padding: 80px 0; }
+
+    /* Dynamic Island Header Styles */
+    .dynamic-island {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(28, 28, 30, 0.8);
+        border-radius: 30px;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 280px;
+        height: 40px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+    .dynamic-island:hover {
+        width: 320px;
+        height: 50px;
+    }
+    .nav-icon {
+        width: 24px;
+        height: 24px;
+        fill: #8e8e93;
+        transition: fill 0.3s ease;
+    }
+    .nav-icon:hover {
+        fill: #ffffff;
+    }
+
+    /* Theme Aura */
+    .theme-aura {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 200px;
+        background: radial-gradient(
+            circle at 50% 0%,
+            rgba(76, 0, 255, 0.5) 0%,
+            rgba(76, 0, 255, 0.2) 20%,
+            rgba(76, 0, 255, 0.1) 40%,
+            rgba(76, 0, 255, 0) 60%
+        );
+        filter: blur(40px);
+        z-index: -1;
+    }
+
+    /* Profile Section */
+    #profile {
+        text-align: center;
+        background: rgba(42, 42, 42, 0.7);
+        border-radius: 10px;
+        padding: 60px 20px;
+        margin-bottom: 40px;
+        backdrop-filter: blur(10px);
+    }
+    .profile-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 4px solid #00ffcc;
+        margin-bottom: 20px;
+    }
+    .social-links a {
+        color: #00ffcc;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 1.2em;
+        transition: color 0.3s ease;
+    }
+    .social-links a:hover { color: #ffffff; }
+
+    /* Services Section */
+    #services {
+        background: rgba(26, 26, 26, 0.7);
+        border-radius: 10px;
+        padding: 60px 20px;
+        backdrop-filter: blur(10px);
+    }
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+    .service-card {
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(0,255,204,0.2);
+        border-radius: 10px;
+        padding: 30px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,255,204,0.1);
+    }
+    .service-card img.service-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        box-shadow: 0 4px 8px rgba(0, 255, 204, 0.1);
+    }
+
+    /* About Section */
+    #about {
+        background: rgba(42, 42, 42, 0.7);
+        border-radius: 10px;
+        padding: 60px 20px;
+        backdrop-filter: blur(10px);
+    }
+
+    /* Footer */
+    footer {
+        background: rgba(15, 15, 15, 0.7);
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+        border-top: 1px solid rgba(0, 255, 204, 0.5);
+        backdrop-filter: blur(10px);
+    }
+
+    @media (max-width: 768px) {
+        h1 { font-size: 24px; }
+        h2 { font-size: 20px; }
+        .profile-image { width: 150px; height: 150px; }
+        .dynamic-island { top: 10px; width: 240px; }
+        .dynamic-island:hover { width: 280px; }
+    }
+    ]]></b:skin>
+</head>
+<body>
+    <div class='theme-aura'></div>
+    <nav class='dynamic-island'>
+        <a href='#profile' aria-label='Home'>
+            <svg class='nav-icon' viewBox='0 0 24 24'>
+                <path d='M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z'/>
+            </svg>
+        </a>
+        <a href='#projects' aria-label='Projects'>
+            <svg class='nav-icon' viewBox='0 0 24 24'>
+                <path d='M22 9V7h-2V5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2v-2h-2V9h2zm-4 10H4V5h14v14zM6 13h5v4H6zm6-6h4v3h-4zM6 7h5v5H6zm6 4h4v6h-4z'/>
+            </svg>
+        </a>
+        <a href='#services' aria-label='Services'>
+            <svg class='nav-icon' viewBox='0 0 24 24'>
+                <path d='M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z'/>
+            </svg>
+        </a>
+        <a href='#about' aria-label='About'>
+            <svg class='nav-icon' viewBox='0 0 24 24'>
+                <path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z'/>
+            </svg>
+        </a>
+    </nav>
+
+    <main class='container'>
+        <b:section id='main' showaddelement='no'>
+            <section id='profile'>
+                <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiavqbhhSFFQHCKhOChMz3i2Ee_a9coSKMAbNVzJamXbqfP_FAG30aaFt5iBGeBHQ-5QoP2HG7jg1fJCOYYCgVC8xjoRWelxBfokOEBcSHVbzekyhRvQkXtm-zOJp4dfBb3iaUp2dqodIcHrUmOuLUs6TdRGWZ1fBOHhawZdMYYVzxLB7UYt89PydOYtTmV/s320/Rehan.jpg' alt='Profile of Mohammad Rehan Shaikh' class='profile-image' />
+                <h1>Mohammad Rehan Shaikh</h1>
+                <h2>Software Developer | Automation Expert | Ethical Hacker</h2>
+                <p>Creating innovative software solutions and ensuring security through ethical hacking.</p>
+                <div class='social-links'>
+                    <a href='https://discordapp.com/users/1196693958814867572/' target='_blank'>Discord</a>
+                    <a href='https://github.com/REHANxATOMIX' target='_blank'>GitHub</a>
+                    <a href='tg://user?id=6241590270'>Telegram</a>
+                </div>
+            </section>
+
+            <section id='services'>
+                <h2>Services Offered</h2>
+                <div class='services-grid'>
+                    <div class='service-card'>
+                        <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEio7CEjMgmmZ5v98934vUgdivZLjfNKWtV_iwakjIiGdybkvlN_9uQPyYEVcrxIJv9gZJU8VGaAtKMqtI_1382PE5iH_Xu8tZ8RwlYcDymgLxS-bHaD5yFyBIv_S6zJGO6zDk8mE179pun_DVPE9qb4j-5TCxcpRvXyXfbmg6WnjWJerQxEnlrLyZBswUyl/s320/Custom-Software-Development-870x520.jpg' alt='Custom Software Development' class='service-image' />
+                        <h3>Software Development</h3>
+                        <p>Tailored applications and automation tools designed to meet your specific needs.</p>
+                    </div>
+                    <div class='service-card'>
+                        <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0M21mLjUitiVwkCH-by5HJ0PB5WbHZchzu8YBqTdDTkV2PRuUodmYjGXiKgSE2HstwRs9KrqlXHSqGTUiFU3fxLxI_dyrolMCqoj1lNOUcFzqCF6cFUB-v1ICtL0InIgDS5sGPmxOWbjfFKY3tedffwAy8QTBL2dn0VOa0SJz7MXHQp-ExocCtxQwCvem/s600/photo_2024-09-25_15-53-14.jpg' alt='Automation Programs' class='service-image' />
+                        <h3>Automation Programs</h3>
+                        <p>Solutions for streamlining processes and increasing efficiency in your business.</p>
+                    </div>
+                    <div class='service-card'>
+                        <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit5IOd0-Yddd3Ilz1YvvPCH_Y8myP2gScO-7xS7hgRE2uiZxkHvVKGovkNDUnp6Toa5tZJAe4duWLG6nlVa1AXxE00XGpnNOZCcZCKhr7yNmqccTwJkilq7AeHS0skZiFqsc6FYY-pfT1WxbsAf8aqSnrQJhCqrjW_omjEnArro5lg-b-M2QXq-tWZRf4q/s600/Software-Development.jpg' alt='Premium Website Development' class='service-image' />
+                        <h3>Premium Website Development</h3>
+                        <p>Creating high-quality, visually appealing websites for businesses and individuals.</p>
+                    </div>
+                    <div class='service-card'>
+                        <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3_K4v8saVzOJM_bjd-PZHQpSQvR73efdFgfGWd_RBy0E1r-cO1OmAWdZBUY0ydULnKfa8aoBEG8YJk2zvJUb4fVFLQAsFvGgzaBVYjzXKiFS4nmzEUQWHZxRor7uibcwPF59mkADYvHMc3jNhwW71Q0ecp58bi9RGeKZKNRCWVg4QUmz69_gDg9v5odfi/s600/photo_2024-09-25_15-53-21.jpg' alt='Custom ChatBots' class='service-image' />
+                        <h3>Custom ChatBots</h3>
+                        <p>Creating versatile chatbots for customer support, automation, and integration with platforms like Telegram, Discord, and more.</p>
+                    </div>
+                    <div class='service-card'>
+                        <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPWCWe6EfIvq7VxVQyNvPkD9PlFENq8AwFbwuE-gjcrXcxAX3uMolpTp443W11R6gDMzXa3Rk8jbH3uQvHgKwHgQj0oHOZSae3QKG5WqexlvSt7Jn6m9lHmJE13Bzkpf0WAEv6jHiBQKPmbd5hrjK03QIp1n7NpXqBOSBvxCrxmV14LHqDtyj81AmUl8vR/s320/hacking-2.jpg' alt='Ethical Hacking And Pentesting' class='service-image' />
+                        <h3>Ethical Hacking And Pentesting</h3>
+                        <p>Offering security assessments, vulnerability testing, and participation in bug bounty programs.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id='about'>
+                <h2>About Me</h2>
+                <p>I'm a passionate developer with a strong foundation in software engineering and ethical hacking. My goal is to create innovative solutions that make a difference.</p>
+            </section>
+          
+          <section id="portfolio-redirect">
+            <h2>Ready to see more?</h2>
+            <p>Explore my portfolio to see my latest projects and achievements.</p>
+            <a href="https://atomix-rehan.blogspot.com/p/portal_15.html" class="portfolio-button" target="_blank">View My Portfolio</a>
+        </section>
+          
+          
+        </b:section>
+    </main>
+
+    <footer>
+        <p> © <script>document.write(new Date().getFullYear())</script> Mohammad Rehan Shaikh. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+    //<![CDATA[
+    // Add any JavaScript you want to include here
+    // For example, you could add smooth scrolling to anchor links:
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    //]]>
+    </script>
+
+    <!-- Include any additional Blogger widgets or scripts here -->
+    <b:include data='blog' name='google-analytics'/>
+</body>
+</html>
