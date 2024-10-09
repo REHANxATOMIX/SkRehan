@@ -125,7 +125,7 @@ h2 {
 
 /* Services Section */
 #services {
-    background: rgba(26, 26, 26, 0.7);
+    background: rgba(26, 26, 26, 0.8); /* Darker background to enhance glass effect */
     border-radius: 10px;
     padding: 60px 20px;
     backdrop-filter: blur(10px);
@@ -136,15 +136,17 @@ h2 {
     gap: 30px;
 }
 .service-card {
-    background: rgba(255,255,255,0.1);
-    border: 1px solid rgba(0,255,204,0.2);
+    background: rgba(0, 255, 204, 0.1); /* Light cyan with transparency for glass effect */
+    border: 1px solid rgba(0, 255, 204, 0.3); /* Lighter border */
     border-radius: 10px;
     padding: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px); /* Add blur effect for glass theme */
+    box-shadow: 0 4px 20px rgba(0, 255, 204, 0.2); /* Adjusted shadow for depth */
 }
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,255,204,0.1);
+    box-shadow: 0 10px 30px rgba(0, 255, 204, 0.3); /* Enhanced shadow on hover */
 }
 .service-card img.service-image {
     width: 100%;
