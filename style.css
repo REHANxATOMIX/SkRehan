@@ -1,0 +1,117 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+    padding: 20px;
+}
+
+/* Profile Section */
+#profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-image {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    border-radius: 50%; /* Circular profile image */
+    border: 2px solid #333; /* Border around the image */
+}
+
+/* Navigation */
+.dynamic-island {
+    display: flex;
+    justify-content: center;
+    background: #333; /* Dark background for navigation */
+    padding: 10px 0;
+}
+
+.dynamic-island a {
+    color: white; /* White text for links */
+    margin: 0 15px;
+    text-decoration: none; /* Remove underline */
+}
+
+.dynamic-island a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Sections */
+h1, h2 {
+    margin-bottom: 10px;
+    color: #444; /* Slightly darker for headings */
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+/* Services */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service-card {
+    background: white; /* White background for service cards */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    text-align: center; /* Center the content */
+    transition: transform 0.2s; /* Transition effect */
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+.service-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Slight rounding */
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer or Additional Information */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .dynamic-island {
+        flex-direction: column; /* Stack links on small screens */
+    }
+}
