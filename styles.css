@@ -1,4 +1,39 @@
 <style>
+
+/* Dynamic Island Header Styles */
+    .dynamic-island {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(28, 28, 30, 0.8);
+        border-radius: 30px;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 280px;
+        height: 40px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+    .dynamic-island:hover {
+        width: 320px;
+        height: 50px;
+    }
+    .nav-icon {
+        width: 24px;
+        height: 24px;
+        fill: #8e8e93;
+        transition: fill 0.3s ease;
+    }
+    .nav-icon:hover {
+        fill: #ffffff;
+    }
+
+
+
 /* CSS Styles */
 * {
     box-sizing: border-box;
