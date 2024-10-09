@@ -251,23 +251,90 @@
         }
 
         .typewriter {
-            overflow: hidden;
-            border-right: .15em solid #00ffcc;
-            white-space: nowrap;
-            margin: 0 auto;
-            letter-spacing: .15em;
-            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+        overflow: hidden;
+        white-space: normal; /* Changed from nowrap to normal */
+        margin: 0 auto;
+        letter-spacing: .05em; /* Reduced letter spacing */
+        animation: typing 3.5s steps(40, end);
+        border-right: none; /* Removed the blinking cursor for simplicity */
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    /* Remove the blink-caret animation as it's no longer needed */
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 10px;
         }
 
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
+        .services-grid {
+            grid-template-columns: 1fr;
         }
 
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: #00ffcc; }
+        h1 {
+            font-size: 2em; /* Further reduced font size for mobile */
         }
+
+        h2 {
+            font-size: 1.8em; /* Reduced heading size for mobile */
+        }
+
+        .dynamic-island {
+            padding: 10px;
+            margin: 10px auto;
+            max-width: 90%; /* Adjusted width for smaller screens */
+        }
+
+        .nav-icon {
+            width: 20px;
+            height: 20px;
+            margin: 0 8px; /* Reduced margin for icons */
+        }
+
+        .profile-image {
+            width: 150px; /* Smaller profile image for mobile */
+            height: 150px;
+        }
+
+        .typewriter {
+            font-size: 0.9em; /* Smaller font size for the tagline on mobile */
+            letter-spacing: normal; /* Remove letter spacing on mobile */
+        }
+
+        .social-icon {
+            width: 25px; /* Slightly smaller social icons */
+            height: 25px;
+            margin: 0 8px;
+        }
+
+        .service-card {
+            padding: 20px; /* Reduced padding for service cards */
+        }
+
+        .service-image {
+            height: 150px; /* Smaller service images on mobile */
+        }
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 1.8em; /* Even smaller font size for very small devices */
+        }
+
+        .typewriter {
+            font-size: 0.8em; /* Smaller font size for the tagline on very small devices */
+        }
+
+        .social-icon {
+            width: 20px; /* Even smaller social icons for very small devices */
+            height: 20px;
+            margin: 0 5px;
+        }
+    }
 
         .social-links {
             margin-top: 30px;
