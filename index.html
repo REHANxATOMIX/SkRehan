@@ -1,267 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Mohammad Rehan Shaikh, Software Developer, Automation Expert, and Ethical Hacker.">
-    <meta name="keywords" content="Mohammad Rehan Shaikh, Software Developer, Automation, Ethical Hacking, Portfolio">
-    <title>Mohammad Rehan Shaikh - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Portfolio of Mohammad Rehan Shaikh - Creative Developer & Security Expert">
+    <title>Mohammad Rehan Shaikh - Creative Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        particlesJS("particle-background", {
-            particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: "#00ffcc" },
-                shape: {
-                    type: "circle",
-                    stroke: { width: 0, color: "#000000" },
-                    polygon: { nb_sides: 5 },
-                },
-                opacity: {
-                    value: 0.5,
-                    random: true,
-                    anim: { enable: true, speed: 1, opacity_min: 0.1, sync: false },
-                },
-                size: {
-                    value: 3,
-                    random: true,
-                    anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
-                },
-                line_linked: {
-                    enable: true,
-                    distance: 150,
-                    color: "#00ffcc",
-                    opacity: 0.4,
-                    width: 1,
-                },
-                move: {
-                    enable: true,
-                    speed: 6,
-                    direction: "none",
-                    random: false,
-                    straight: false,
-                    out_mode: "out",
-                    bounce: false,
-                    attract: { enable: false, rotateX: 600, rotateY: 1200 },
-                },
-            },
-            interactivity: {
-                detect_on: "canvas",
-                events: {
-                    onhover: { enable: true, mode: "repulse" },
-                    onclick: { enable: true, mode: "push" },
-                    resize: true,
-                },
-                modes: {
-                    grab: { distance: 400, line_linked: { opacity: 1 } },
-                    bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
-                    repulse: { distance: 200, duration: 0.4 },
-                    push: { particles_nb: 4 },
-                    remove: { particles_nb: 2 },
-                },
-            },
-            retina_detect: true,
-        });
-    </script>
-</head>
-
-<body>
-    <div id="particle-background"></div>
-    <nav class="dynamic-island">
-        <a href="#profile" aria-label="Home">
-            <svg class="nav-icon" viewBox="0 0 24 24">
-                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-            </svg>
-        </a>
-        <a href="#projects" aria-label="Projects">
-            <svg class="nav-icon" viewBox="0 0 24 24">
-                <path d="M22 9V7h-2V5c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2v-2h-2V9h2zm-4 10H4V5h14v14zM6 13h5v4H6zm6-6h4v3h-4zM6 7h5v5H6zm6 4h4v6h-4z"/>
-            </svg>
-        </a>
-        <a href="#services" aria-label="Services">
-            <svg class="nav-icon" viewBox="0 0 24 24">
-                <path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"/>
-            </svg>
-        </a>
-        <a href="#portfolio" aria-label="Portfolio">
-            <svg class="nav-icon" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
-            </svg>
-        </a>
-    </nav>
-
-    <main class="container">
-        <section id="profile">
-            <div class="profile-section">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiavqbhhSFFQHCKhOChMz3i2Ee_a9coSKMAbNVzJamXbqfP_FAG30aaFt5iBGeBHQ-5QoP2HG7jg1fJCOYYCgVC8xjoRWelxBfokOEBcSHVbzekyhRvQkXtm-zOJp4dfBb3iaUp2dqodIcHrUmOuLUs6TdRGWZ1fBOHhawZdMYYVzxLB7UYt89PydOYtTmV/s320/Rehan.jpg" class="profile-image" alt="Profile Picture of Mohammad Rehan Shaikh">
-                <h1 class="fade-in">Mohammad Rehan Shaikh</h1>
-                <p class="typewriter">Software Developer | Automation Expert | Ethical Hacker</p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/skrehangamer/" target="_blank" aria-label="LinkedIn Profile">
-                        <svg class="social-icon" viewBox="0 0 24 24">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/REHANxATOMIX" target="_blank" aria-label="GitHub Profile">
-                        <svg class="social-icon" viewBox="0 0 24 24">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
-                    <a href="mailto:skrehangamer@gmail.com" target="_blank" aria-label="Email Mohammad Rehan Shaikh">
-                        <svg class="social-icon" viewBox="0 0 24 24">
-                            <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.youtube.com/@CodexIQ" target="_blank" aria-label="YouTube Channel">
-                        <svg class="social-icon" viewBox="0 0 24 24">
-                            <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-                        </svg>
-                    </a>
-                    <a href="https://discordapp.com/users/1196693958814867572/" target="_blank" aria-label="Discord Server">
-                        <svg class="social-icon" viewBox="0 0 24 24">
-                            <path d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z"/>
-                        </svg>
-                    </a>
-                     <section class="slim-section">
-    <a href="your-redirect-page.html" class="slim-link">
-        <span>Go to My Code Page</span>
-    </a>
-</section>
-
-<style>
-/* Slim Stylish Section Styling */
-.slim-section {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    color: cyan; /* Cyan text for hacker theme */
-    width: 100%;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 15px 20px;
-    border-radius: 30px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Dark shadow for depth */
-    text-align: center;
-    backdrop-filter: blur(10px); /* Glass effect */
-    border: 1px solid rgba(0, 255, 255, 0.5); /* Semi-transparent cyan border */
-}
-
-.slim-link {
-    text-decoration: none;
-    color: cyan; /* Cyan color for links */
-    font-weight: bold;
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid cyan; /* Cyan border for the link */
-    border-radius: 25px;
-    transition: all 0.3s ease-in-out;
-}
-
-.slim-link:hover {
-    background-color: rgba(0, 255, 255, 0.2); /* Light cyan background on hover */
-    color: black; /* Black text color on hover */
-    cursor: pointer;
-}
-</style>
-                    <section id="services">
-            <h2 class="slide-in">Services Offered</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEio7CEjMgmmZ5v98934vUgdivZLjfNKWtV_iwakjIiGdybkvlN_9uQPyYEVcrxIJv9gZJU8VGaAtKMqtI_1382PE5iH_Xu8tZ8RwlYcDymgLxS-bHaD5yFyBIv_S6zJGO6zDk8mE179pun_DVPE9qb4j-5TCxcpRvXyXfbmg6WnjWJerQxEnlrLyZBswUyl/s320/Custom-Software-Development-870x520.jpg' alt='Custom Software Development' class='service-image' />
-                    <h3>Software Development</h3>
-                    <p>Tailored applications and automation tools designed to meet your specific needs.</p>
-                </div>
-                <div class="service-card">
-                    <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0M21mLjUitiVwkCH-by5HJ0PB5WbHZchzu8YBqTdDTkV2PRuUodmYjGXiKgSE2HstwRs9KrqlXHSqGTUiFU3fxLxI_dyrolMCqoj1lNOUcFzqCF6cFUB-v1ICtL0InIgDS5sGPmxOWbjfFKY3tedffwAy8QTBL2dn0VOa0SJz7MXHQp-ExocCtxQwCvem/s600/photo_2024-09-25_15-53-14.jpg' alt='Automation Programs' class='service-image' />
-                    <h3>Automation Programs</h3>
-                    <p>Solutions for streamlining processes and increasing efficiency in your business.</p>
-                </div>
-                <div class="service-card">
-                    <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit5IOd0-Yddd3Ilz1YvvPCH_Y8myP2gScO-7xS7hgRE2uiZxkHvVKGovkNDUnp6Toa5tZJAe4duWLG6nlVa1AXxE00XGpnNOZCcZCKhr7yNmqccTwJkilq7AeHS0skZiFqsc6FYY-pfT1WxbsAf8aqSnrQJhCqrjW_omjEnArro5lg-b-M2QXq-tWZRf4q/s600/Software-Development.jpg' alt='Premium Website Development' class='service-image' />
-                    <h3>Premium Website Development</h3>
-                    <p>Creating high-quality, visually appealing websites for businesses and individuals.</p>
-                </div>
-                <div class="service-card">
-                    <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3_K4v8saVzOJM_bjd-PZHQpSQvR73efdFgfGWd_RBy0E1r-cO1OmAWdZBUY0ydULnKfa8aoBEG8YJk2zvJUb4fVFLQAsFvGgzaBVYjzXKiFS4nmzEUQWHZxRor7uibcwPF59mkADYvHMc3jNhwW71Q0ecp58bi9RGeKZKNRCWVg4QUmz69_gDg9v5odfi/s600/photo_2024-09-25_15-53-21.jpg' alt='Custom ChatBots' class='service-image' />
-                    <h3>Custom ChatBots</h3>
-                    <p>Creating versatile chatbots for customer support, automation, and integration with platforms like Telegram, Discord, and more.</p>
-                </div>
-                <div class="service-card">
-                    <img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPWCWe6EfIvq7VxVQyNvPkD9PlFENq8AwFbwuE-gjcrXcxAX3uMolpTp443W11R6gDMzXa3Rk8jbH3uQvHgKwHgQj0oHOZSae3QKG5WqexlvSt7Jn6m9lHmJE13Bzkpf0WAEv6jHiBQKPmbd5hrjK03QIp1n7NpXqBOSBvxCrxmV14LHqDtyj81AmUl8vR/s320/hacking-2.jpg' alt='Ethical Hacking And Pentesting' class='service-image' />
-                    <h3>Ethical Hacking And Pentesting</h3>
-                    <p>Offering security assessments, vulnerability testing, and participation in bug bounty programs.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="portfolio">
-            <h2 class="slide-in">Portfolio</h2>
-            <p>Check out my <a href="https://github.com/mohammad-rehan-shaikh" class="portfolio-button" target="_blank">projects here</a>.</p>
-        </section>
-    </main>
-
-                     <section class="slim-section">
-    <a href="your-redirect-page.html" class="slim-link">
-        <span>Go to My Code Page</span>
-    </a>
-</section>
-
-<style>
-/* Slim Stylish Section Styling */
-.slim-section {
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    color: cyan; /* Cyan text for hacker theme */
-    width: 100%;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 15px 20px;
-    border-radius: 30px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Dark shadow for depth */
-    text-align: center;
-    backdrop-filter: blur(10px); /* Glass effect */
-    border: 1px solid rgba(0, 255, 255, 0.5); /* Semi-transparent cyan border */
-}
-
-.slim-link {
-    text-decoration: none;
-    color: cyan; /* Cyan color for links */
-    font-weight: bold;
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid cyan; /* Cyan border for the link */
-    border-radius: 25px;
-    transition: all 0.3s ease-in-out;
-}
-
-.slim-link:hover {
-    background-color: rgba(0, 255, 255, 0.2); /* Light cyan background on hover */
-    color: black; /* Black text color on hover */
-    cursor: pointer;
-}
-</style>
-
-
-    <footer>
-        <p> © <script>document.write(new Date().getFullYear())</script> Mohammad Rehan Shaikh. All Rights Reserved.</p>
-    </footer>
-
     <style>
-        /* CSS Styles */
+        /* Core Styles */
+        :root {
+            --primary: #00ffcc;
+            --secondary: #00ccff;
+            --dark: #0a0a0a;
+            --light: #ffffff;
+            --card-width: 300px;
+            --card-height: 380px;
+            --transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #000;
-            color: #fff;
-            overflow-x: hidden;
+            background-color: var(--dark);
+            color: var(--light);
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
-        #particle-background {
+        /* Particle Background */
+        #particles-js {
             position: fixed;
             top: 0;
             left: 0;
@@ -270,297 +43,462 @@
             z-index: -1;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-           /* Dynamic Island Header Styles */
-.dynamic-island {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(28, 28, 30, 0.3); /* Lighter background for glass effect */
-    backdrop-filter: blur(10px); /* Glass blur effect */
-    border-radius: 30px;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 280px;
-    height: 40px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-.dynamic-island:hover {
-    width: 320px;
-    height: 50px;
-}
-
-/* Nav Icon Styles */
-.nav-icon {
-    width: 24px;
-    height: 24px;
-    fill: #00ffcc;
-    margin: 0 15px;
-    transition: transform 0.3s, fill 0.3s;
-}
-
-.nav-icon:hover {
-    transform: scale(1.2);
-    fill: #fff;
-}
-
-
-        .profile-section {
-            text-align: center;
-            margin: 50px 0;
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .profile-image {
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-            border: 5px solid #00ffcc;
-            transition: transform 0.5s, box-shadow 0.5s;
-        }
-
-        .profile-image:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 20px #00ffcc;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin: 20px 0;
-            background: linear-gradient(45deg, #00ffcc, #00ccff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .typewriter {
-        overflow: hidden;
-        white-space: normal; /* Changed from nowrap to normal */
-        margin: 0 auto;
-        letter-spacing: .05em; /* Reduced letter spacing */
-        animation: typing 3.5s steps(40, end);
-        border-right: none; /* Removed the blinking cursor for simplicity */
-    }
-
-    @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
-    }
-
-    /* Remove the blink-caret animation as it's no longer needed */
-
-    @media (max-width: 768px) {
-        .container {
-            padding: 10px;
-        }
-
-        .services-grid {
-            grid-template-columns: 1fr;
-        }
-
-        h1 {
-            font-size: 2em; /* Further reduced font size for mobile */
-        }
-
-        h2 {
-            font-size: 1.8em; /* Reduced heading size for mobile */
+        /* Navigation */
+        .nav-container {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            width: 90%;
+            max-width: 400px;
         }
 
         .dynamic-island {
-            padding: 10px;
-            margin: 10px auto;
-            max-width: 90%; /* Adjusted width for smaller screens */
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            transition: var(--transition);
+        }
+
+        .dynamic-island:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 255, 204, 0.2);
         }
 
         .nav-icon {
-            width: 20px;
-            height: 20px;
-            margin: 0 8px; /* Reduced margin for icons */
+            width: 24px;
+            height: 24px;
+            fill: var(--primary);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .nav-icon:hover {
+            fill: var(--light);
+            transform: scale(1.2);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 20px;
+        }
+
+        .profile-container {
+            text-align: center;
+            max-width: 800px;
         }
 
         .profile-image {
-            width: 150px; /* Smaller profile image for mobile */
-            height: 150px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid var(--primary);
+            padding: 5px;
+            margin-bottom: 30px;
+            transition: var(--transition);
         }
 
-        .typewriter {
-            font-size: 0.9em; /* Smaller font size for the tagline on mobile */
-            letter-spacing: normal; /* Remove letter spacing on mobile */
+        .profile-image:hover {
+            transform: scale(1.05) rotate(5deg);
+            border-color: var(--secondary);
+            box-shadow: 0 0 30px rgba(0, 255, 204, 0.3);
         }
 
-        .social-icon {
-            width: 25px; /* Slightly smaller social icons */
-            height: 25px;
-            margin: 0 8px;
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards 0.5s;
         }
 
-        .service-card {
-            padding: 20px; /* Reduced padding for service cards */
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards 0.7s;
         }
 
-        .service-image {
-            height: 150px; /* Smaller service images on mobile */
-        }
-    }
-
-    @media (max-width: 480px) {
-        h1 {
-            font-size: 1.8em; /* Even smaller font size for very small devices */
+        /* Services Section */
+        .services {
+            padding: 100px 20px;
         }
 
-        .typewriter {
-            font-size: 0.8em; /* Smaller font size for the tagline on very small devices */
-        }
-
-        .social-icon {
-            width: 20px; /* Even smaller social icons for very small devices */
-            height: 20px;
-            margin: 0 5px;
-        }
-    }
-
-        .social-links {
-            margin-top: 30px;
-        }
-
-        .social-icon {
-            width: 30px;
-            height: 30px;
-            fill: #00ffcc;
-            margin: 0 10px;
-            transition: transform 0.3s, fill 0.3s;
-        }
-
-        .social-icon:hover {
-            transform: scale(1.2);
-            fill: #fff;
-        }
-
-        #services {
-            margin: 100px 0;
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(var(--card-width), 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .service-card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            width: 100%;
+            height: var(--card-height);
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
             overflow: hidden;
+            transition: var(--transition);
         }
 
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 255, 204, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
 
         .service-image {
             width: 100%;
-            height: 200px;
+            height: 100%;
             object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 20px;
+            transition: var(--transition);
         }
 
-        h2 {
-            text-align: center;
-            margin: 50px 0;
-            font-size: 2.5em;
-            position: relative;
-            display: inline-block;
-            background: linear-gradient(45deg, #00ffcc, #00ccff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .service-card:hover .service-image {
+            transform: scale(1.1);
         }
 
-        h3 {
-            color: #00ffcc;
+        .service-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 30px;
+            background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.9) 0%,
+                rgba(0, 0, 0, 0.2) 100%
+            );
+            transform: translateY(70px);
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-content {
+            transform: translateY(0);
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            font-weight: 600;
             margin-bottom: 15px;
+            color: var(--primary);
         }
 
-        .portfolio-button {
-            display: inline-block;
-            background: linear-gradient(45deg, #00ffcc, #00ccff);
-            color: #000;
-            padding: 10px 20px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.3s, box-shadow 0.3s;
+        .service-description {
+            font-size: 0.9rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: var(--transition);
         }
 
-        .portfolio-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
+        .service-card:hover .service-description {
+            opacity: 1;
+            transform: translateY(0);
         }
 
+        /* Social Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards 0.9s;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            fill: var(--primary);
+            transition: var(--transition);
+        }
+
+        .social-icon:hover {
+            fill: var(--light);
+            transform: translateY(-5px);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Footer */
         footer {
             text-align: center;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            margin-top: 50px;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
         }
 
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        @keyframes slideIn {
-            from {
-                transform: translateY(-30px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .fade-in {
-            animation: fadeIn 1s ease-in-out;
-        }
-
-        .slide-in {
-            animation: slideIn 0.7s ease-in-out forwards;
-        }
-
+        /* Responsive Design */
         @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
             .services-grid {
                 grid-template-columns: 1fr;
+                padding: 0 20px;
             }
 
-            h1 {
-                font-size: 2.5em;
-            }
-
-            .dynamic-island {
-                padding: 10px;
-            }
-
-            .nav-icon {
-                width: 20px;
-                height: 20px;
-                margin: 0 10px;
+            .service-card {
+                max-width: 400px;
+                margin: 0 auto;
             }
         }
-    </style>
-</body>
 
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--dark);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--secondary);
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <nav class="nav-container">
+        <div class="dynamic-island">
+            <a href="#home">
+                <svg class="nav-icon" viewBox="0 0 24 24">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                </svg>
+            </a>
+            <a href="#services">
+                <svg class="nav-icon" viewBox="0 0 24 24">
+                    <path d="M21.71 20.29l-18-18A1 1 0 002.29 3.71L5 6.41V18a2 2 0 002 2h10v-2H7v-9.59l12 12z"/>
+                </svg>
+            </a>
+            <a href="#portfolio">
+                <svg class="nav-icon" viewBox="0 0 24 24">
+                    <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                </svg>
+            </a>
+            <a href="#contact">
+                <svg class="nav-icon" viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="profile-container">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiavqbhhSFFQHCKhOChMz3i2Ee_a9coSKMAbNVzJamXbqfP_FAG30aaFt5iBGeBHQ-5QoP2HG7jg1fJCOYYCgVC8xjoRWelxBfokOEBcSHVbzekyhRvQkXtm-zOJp4dfBb3iaUp2dqodIcHrUmOuLUs6TdRGWZ1fBOHhawZdMYYVzxLB7UYt89PydOYtTmV/s320/Rehan.jpg" alt="Mohammad Rehan Shaikh" class="profile-image">
+            <h1 class="hero-title">Mohammad Rehan Shaikh</h1>
+            <p class="hero-subtitle">Creative Developer & Security Expert</p>
+            <div class="social-links">
+                <a href="https://github.com/REHANxATOMIX" target="_blank">
+                    <svg class="social-icon" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/skrehangamer/" target="_blank">
+                    <svg class="social-icon" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="mailto:skrehangamer@gmail.com">
+                    <svg class="social-icon" viewBox="0 0 24 24">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="section-title">Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEio7CEjMgmmZ5v98934vUgdivZLjfNKWtV_iwakjIiGdybkvlN_9uQPyYEVcrxIJv9gZJU8VGaAtKMqtI_1382PE5iH_Xu8tZ8RwlYcDymgLxS-bHaD5yFyBIv_S6zJGO6zDk8mE179pun_DVPE9qb4j-5TCxcpRvXyXfbmg6WnjWJerQxEnlrLyZBswUyl/s320/Custom-Software-Development-870x520.jpg" alt="Software Development" class="service-image">
+                <div class="service-content">
+                    <h3 class="service-title">Software Development</h3>
+                    <p class="service-description">Creating custom applications and automation tools tailored to meet your specific business needs and requirements.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj0M21mLjUitiVwkCH-by5HJ0PB5WbHZchzu8YBqTdDTkV2PRuUodmYjGXiKgSE2HstwRs9KrqlXHSqGTUiFU3fxLxI_dyrolMCqoj1lNOUcFzqCF6cFUB-v1ICtL0InIgDS5sGPmxOWbjfFKY3tedffwAy8QTBL2dn0VOa0SJz7MXHQp-ExocCtxQwCvem/s600/photo_2024-09-25_15-53-14.jpg" alt="Automation Solutions" class="service-image">
+                <div class="service-content">
+                    <h3 class="service-title">Automation Solutions</h3>
+                    <p class="service-description">Streamlining processes with intelligent automation systems to boost efficiency and productivity.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEit5IOd0-Yddd3Ilz1YvvPCH_Y8myP2gScO-7xS7hgRE2uiZxkHvVKGovkNDUnp6Toa5tZJAe4duWLG6nlVa1AXxE00XGpnNOZCcZCKhr7yNmqccTwJkilq7AeHS0skZiFqsc6FYY-pfT1WxbsAf8aqSnrQJhCqrjW_omjEnArro5lg-b-M2QXq-tWZRf4q/s600/Software-Development.jpg" alt="Website Development" class="service-image">
+                <div class="service-content">
+                    <h3 class="service-title">Premium Websites</h3>
+                    <p class="service-description">Developing modern, responsive websites with cutting-edge technologies and stunning user experiences.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3_K4v8saVzOJM_bjd-PZHQpSQvR73efdFgfGWd_RBy0E1r-cO1OmAWdZBUY0ydULnKfa8aoBEG8YJk2zvJUb4fVFLQAsFvGgzaBVYjzXKiFS4nmzEUQWHZxRor7uibcwPF59mkADYvHMc3jNhwW71Q0ecp58bi9RGeKZKNRCWVg4QUmz69_gDg9v5odfi/s600/photo_2024-09-25_15-53-21.jpg" alt="ChatBot Development" class="service-image">
+                <div class="service-content">
+                    <h3 class="service-title">Custom ChatBots</h3>
+                    <p class="service-description">Building intelligent chatbots for various platforms to enhance customer engagement and automate support.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhPWCWe6EfIvq7VxVQyNvPkD9PlFENq8AwFbwuE-gjcrXcxAX3uMolpTp443W11R6gDMzXa3Rk8jbH3uQvHgKwHgQj0oHOZSae3QKG5WqexlvSt7Jn6m9lHmJE13Bzkpf0WAEv6jHiBQKPmbd5hrjK03QIp1n7NpXqBOSBvxCrxmV14LHqDtyj81AmUl8vR/s320/hacking-2.jpg" alt="Security Solutions" class="service-image">
+                <div class="service-content">
+                    <h3 class="service-title">Security Solutions</h3>
+                    <p class="service-description">Providing comprehensive security assessments and ethical hacking services to protect your digital assets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© <script>document.write(new Date().getFullYear())</script> Mohammad Rehan Shaikh. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize Particles.js
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#00ffcc'
+                },
+                shape: {
+                    type: 'circle'
+                },
+                opacity: {
+                    value: 0.5,
+                    random: true,
+                    animation: {
+                        enable: true,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#00ffcc',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'repulse'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    repulse: {
+                        distance: 100,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    }
+                }
+            },
+            retina_detect: true
+        });
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add scroll reveal animations
+        window.addEventListener('scroll', () => {
+            const cards = document.querySelectorAll('.service-card');
+            cards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (cardTop < windowHeight * 0.8) {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
 </html>
